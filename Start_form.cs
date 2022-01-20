@@ -11,6 +11,7 @@ namespace MinuVorm
     class Start_form: System.Windows.Forms.Form
     {
         public static int FilmC=0;
+        Label lbl;
         public Start_form()
         {
             this.Height = 400;
@@ -57,6 +58,11 @@ namespace MinuVorm
                 SizeMode = PictureBoxSizeMode.Zoom,
                 Size = new System.Drawing.Size(140, 140)
             };
+            lbl = new Label();
+            lbl.Text = $"{FilmC}";
+
+            lbl.Location = new Point(50, 300);
+            this.Controls.Add(lbl);
 
             film.Click += Film_Click;
             film2.Click += Film_Click2;
@@ -70,6 +76,7 @@ namespace MinuVorm
             this.Controls.Add(film);
             this.Controls.Add(film2);
             this.Controls.Add(film3);
+            this.Controls.Add(lbl);
             film.Click += Film_Click;
             film2.Click += Film_Click2;
             film3.Click += Film_Click3;
@@ -79,14 +86,17 @@ namespace MinuVorm
         private void Film_Click(object sender, EventArgs e)
         {
             FilmC = 1;
+            lbl.Text = $"{FilmC}";
         }
         private void Film_Click2(object sender, EventArgs e)
         {
             FilmC = 2;
+            lbl.Text = $"{FilmC}";
         }
         private void Film_Click3(object sender, EventArgs e)
         {
             FilmC = 3;
+            lbl.Text = $"{FilmC}";
         }
         private void Start_btn_2_Click(object sender, EventArgs e)
         {

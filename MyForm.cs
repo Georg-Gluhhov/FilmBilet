@@ -142,10 +142,18 @@ namespace MinuVorm
             this.Controls.Add(tlp);
             
         }
-        
+        public static void ExampleAsync(int rida, int koht, int film)
+        {
+            TextWriter tsw = new StreamWriter("../../PiletInfo.txt", true);
+
+            tsw.WriteLine($"{rida};{koht};{film}");
+
+            tsw.Close();
+
+        }
         public void Saada_piletid(List<Pilet> piletid)
         {
-            
+
             string text="Sinu ost on \n";
             foreach (var item in piletid)
             {
@@ -170,7 +178,7 @@ namespace MinuVorm
                 message.Subject = "Ostetud piletid";
                 message.Body = text;
                 message.IsBodyHtml = true;
-                client.Send(message);
+               // client.Send(message);
                 piletid.Clear();
             }
             catch (Exception ex)
@@ -185,6 +193,7 @@ namespace MinuVorm
             var rida = int.Parse(btn_click.Name[0].ToString());
             var koht = int.Parse(btn_click.Name[1].ToString());
             var vas = MessageBox.Show("Sinu pilet on: Rida: " + rida + " Koht: " +koht, "Kas ostad?", MessageBoxButtons.YesNo);
+            ExampleAsync(rida, koht, FilmID);
             if (vas == DialogResult.Yes)
             {
                 btn_click.BackColor = Color.Red;
