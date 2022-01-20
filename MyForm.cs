@@ -25,6 +25,7 @@ namespace MinuVorm
         static string[] read_kohad;
         public MyForm()
         {}
+        int FilmID = FilmC;
         public MyForm(string title,string body,string button1,string button2,string button3,string button4)
         {
             texts[0] = button1;

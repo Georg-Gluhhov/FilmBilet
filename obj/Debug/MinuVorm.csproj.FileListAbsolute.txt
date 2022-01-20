@@ -9,3 +9,14 @@ C:\Users\opilane\Source\Repos\MinuVorm3\obj\Debug\MinuVorm.csproj.CoreCompileInp
 C:\Users\opilane\Source\Repos\MinuVorm3\obj\Debug\MinuVorm.exe
 C:\Users\opilane\Source\Repos\MinuVorm3\obj\Debug\MinuVorm.pdb
 C:\Users\opilane\Source\Repos\MinuVorm3\obj\Debug\MinuVorm.Start_form.resources
+C:\Users\opilane\Source\Repos\FilmBilet\obj\Debug\MinuVorm.csprojAssemblyReference.cache
+C:\Users\opilane\Source\Repos\FilmBilet\obj\Debug\MinuVorm.MyForm.resources
+C:\Users\opilane\Source\Repos\FilmBilet\obj\Debug\MinuVorm.Properties.Resources.resources
+C:\Users\opilane\Source\Repos\FilmBilet\obj\Debug\MinuVorm.Start_form.resources
+C:\Users\opilane\Source\Repos\FilmBilet\obj\Debug\MinuVorm.csproj.GenerateResource.cache
+C:\Users\opilane\Source\Repos\FilmBilet\obj\Debug\MinuVorm.csproj.CoreCompileInputs.cache
+C:\Users\opilane\Source\Repos\FilmBilet\obj\Debug\MinuVorm.exe
+C:\Users\opilane\Source\Repos\FilmBilet\obj\Debug\MinuVorm.pdb
+C:\Users\opilane\Source\Repos\FilmBilet\bin\Debug\MinuVorm.exe.config
+C:\Users\opilane\Source\Repos\FilmBilet\bin\Debug\MinuVorm.exe
+C:\Users\opilane\Source\Repos\FilmBilet\bin\Debug\MinuVorm.pdb

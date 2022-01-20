@@ -58,9 +58,9 @@ namespace MinuVorm
                 Size = new System.Drawing.Size(140, 140)
             };
 
-            film.Click +=
-            film2.Click += Start_btn_2_Click;
-            film3.Click += Start_btn_2_Click;
+            film.Click += Film_Click;
+            film2.Click += Film_Click2;
+            film3.Click += Film_Click3;
 
             RadioButton rb = new RadioButton
             {
@@ -76,26 +76,22 @@ namespace MinuVorm
 
         }
 
-        void NextBTN_Click(object sender, EventArgs e)
-        {
-        }
-
         private void Film_Click(object sender, EventArgs e)
         {
-
+            FilmC = 1;
         }
         private void Film_Click2(object sender, EventArgs e)
         {
-
+            FilmC = 2;
         }
         private void Film_Click3(object sender, EventArgs e)
         {
-            
+            FilmC = 3;
         }
         private void Start_btn_2_Click(object sender, EventArgs e)
         {
            
-            MyForm uus_aken = new MyForm(8,5,filminimetus);
+            MyForm uus_aken = new MyForm(8,5,"21");
             
             uus_aken.StartPosition = FormStartPosition.CenterScreen;
             uus_aken.ShowDialog();
